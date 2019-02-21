@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace FileChecker
 {
     /// <summary>
-    /// Returns the properties of a given file. The file must be under 4 Gigabytes (4294967295 bytes) in size.
+    /// Returns the properties of a given file.
     /// </summary>
     public class FileProperties
     {
