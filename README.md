@@ -8,7 +8,7 @@ FileProperties is a small class library designed to help people manipulate and v
 about them. This information includes:
 - Size
 
-The size of the file in bytes. The current limitation is 4 Gigabytes.
+The size of the file in bytes.
 - Extension
 
 The extension of the file, taken straight from the magic bytes. No reliance on MIME types!
