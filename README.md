@@ -58,5 +58,6 @@ Only basic extensions have been added. More will come in the future.
 ## Considerations
 
 - The maximum supported file size is 4 Gigabytes, limited by the `ulong` data type.
+- Some file extensions have been split given their differences in relation to Metadata (ex.: `JPEG` and `JExif` for JPEGs with and without an Exif container, respectively)
 - This library is still in development, so expect some bugs.
 
