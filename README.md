@@ -18,7 +18,7 @@ The extension of the file, taken straight from the magic bytes. No reliance on M
 
 - Lightweight
 
-The file signatures are kept in a dictionary, which allows for [very fast value retrieval](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=netframework-4.7.2#remarks).
+The file signatures are kept in a `Dictionary`, which allows for [very fast value retrieval](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=netframework-4.7.2#remarks).
 Besides, all loops are optimized to run only as much as necessary.
 
 - Usability
@@ -57,7 +57,7 @@ Only basic extensions have been added. More will come in the future.
 
 ## Considerations
 
-- The maximum supported file size is 16 exabytes, limited by the `ulong` data type. Have fun!
+- The maximum supported file size is 16 Exabytes, limited by the `ulong` data type. Have fun!
 - Some file extensions have been split given their differences in relation to Metadata (ex.: `JPEG` and `JExif` for JPEGs with and without an Exif container, respectively)
 - This library is still in development, so expect some bugs.
 
