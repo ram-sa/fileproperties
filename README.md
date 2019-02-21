@@ -45,7 +45,7 @@ Retrieval of any Metadata information contained in the file, such as the ones in
 
 - Replace the `Signatures` `Enum` with another smaller type.
 
-Being an Integer, `Enum` uses 32 bits of data. Since we don't have enough file extensions to fill 2147483647 spots, it's kind of a waste.
+Being an Integer, `Enum` uses 32 bits of data. Since we don't have enough file extensions to fill 2,147,483,647 spots, it's kind of a waste.
 
 - Remove the usage of `List` on dictionaries.
 
@@ -57,7 +57,7 @@ Only basic extensions have been added. More will come in the future.
 
 ## Considerations
 
-- The maximum supported file size is 4 Gigabytes, limited by the `ulong` data type.
+- The maximum supported file size is 16 exabytes, limited by the `ulong` data type. Have fun!
 - Some file extensions have been split given their differences in relation to Metadata (ex.: `JPEG` and `JExif` for JPEGs with and without an Exif container, respectively)
 - This library is still in development, so expect some bugs.
 
