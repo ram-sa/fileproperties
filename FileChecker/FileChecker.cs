@@ -145,7 +145,7 @@ namespace FileChecker
             return false;
         }
         /// <summary>
-        /// Returns true if the file signature is contained in the list.
+        /// Returns true if the file signature is contained in the provided list.
         /// </summary>
         /// <param name="signatures">The list of signatures to be checked.</param>
         public bool CheckExtension(Signature[] signatures)
@@ -190,7 +190,7 @@ namespace FileChecker
         /// <returns>Value in Bytes stored in a unsigned long integer.</returns>
         public static ulong FromKilobytes(int value)
         {
-            return Convert.ToUInt64(value) * 1024;
+            return (ulong)value * 1024;
         }
         /// <summary>
         /// Converts a value in Megabytes to Bytes.
@@ -199,7 +199,7 @@ namespace FileChecker
         /// <returns>Value in Bytes stored in a unsigned long integer.</returns>
         public static ulong FromMegabytes(int value)
         {
-            return Convert.ToUInt64(value) * 1048576;
+            return (ulong)value * 1048576;
         }
 
         private Signature GetSignature()
@@ -211,7 +211,7 @@ namespace FileChecker
                     bool found = true;
                     foreach (var b in sBytes.Select((value, i) => new { i, value }))
                     {
-                        if (b != null)
+                        if (b.value != null)
                         {
                             if (b.value != File[b.i])
                             {
@@ -393,7 +393,7 @@ namespace FileChecker
 
             File = file;
             Signature = GetSignature();
-            Size = Convert.ToUInt64(file.Length);
+            Size = (ulong)file.Length;
             #endregion
         }
     }

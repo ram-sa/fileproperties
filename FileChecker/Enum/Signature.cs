@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FileChecker
 {
-    public enum Signature
+    public enum Signature : byte
     {
         /// <summary>
         /// *.ico file signature.
