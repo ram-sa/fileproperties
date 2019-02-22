@@ -43,17 +43,13 @@ Retrieval of any Metadata information contained in the file, such as the ones in
 
 ### Improvements
 
-- Replace the `Signatures` `Enum` with another smaller type.
-
-Being an Integer, `Enum` uses 32 bits of data. Since we don't have enough file extensions to fill 2,147,483,647 spots, it's kind of a waste.
-
 - Remove the usage of `List` on dictionaries.
 
 Since some file extensions have many different signatures, I decided to use a `List` to group them up, instead of making different extensions for them. Perhaps replace the `Dictionary` with a `Lookup` in the future.
 
-- Add more extensions!
+- Add more file extensions!
 
-Only basic extensions have been added. More will come in the future.
+Only common file extensions have been added. More will come in the future.
 
 ## Considerations
 
