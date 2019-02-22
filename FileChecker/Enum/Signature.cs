@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FileChecker
+namespace FileProperties
 {
     public enum Signature : byte
     {

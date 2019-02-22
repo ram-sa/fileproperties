@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace FileChecker
+namespace FileProperties
 {
     /// <summary>
     /// Returns the properties of a given file.
