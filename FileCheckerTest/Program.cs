@@ -5,7 +5,7 @@ namespace FileCheckerTest
     {
         static void Main(string[] args)
         {
-            byte[] teste = System.IO.File.ReadAllBytes(@"");
+            byte[] teste = System.IO.File.ReadAllBytes(@"C:\Users\ramaral\Downloads\true.jpg");
             var bb = new FileProperties.FileProperties(teste);
             var cc = bb.CheckExtension(new Signature[] { Signature.JExif });
             cc = bb.IsImage();
